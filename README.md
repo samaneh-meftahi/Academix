@@ -1,68 +1,77 @@
-Academix - Academic Management System
+# Academix - Academic Management System
 
-Academix is a Spring Boot-based application designed for managing academic entities such as students, professors, and courses. It follows a layered architecture with JPA for database interactions and Spring Security for authentication and authorization.
+**Academix** is a robust Spring Boot application designed to efficiently manage academic entities such as students, professors, and courses. Built on a layered architecture, it leverages JPA for seamless database interactions and Spring Security for secure authentication and authorization.
 
-🚀 Features
+---
 
-Student, Professor, and Course Management: Create, read, update, and delete operations for academic entities.
+## 🚀 Features
 
-RESTful APIs: Well-structured endpoints for seamless frontend integration.
+- **Comprehensive Academic Management**  
+  Perform create, read, update, and delete (CRUD) operations on Students, Professors, and Courses.
 
-Spring Security: Role-based authentication and authorization.
+- **RESTful APIs**  
+  Well-structured endpoints for smooth integration with frontend applications.
 
-Exception Handling: Custom exceptions for improved error management.
+- **Spring Security Integration**  
+  Role-based authentication and authorization to protect resources.
 
-Layered Architecture: Organized into DTO, Service, Repository, and API layers.
+- **Custom Exception Handling**  
+  Enhanced error management with meaningful custom exceptions.
 
-🛠️ Technologies Used
+- **Layered Architecture**  
+  Clear separation of concerns with DTO, Service, Repository, and API layers.
 
-Spring Boot
+---
 
-Spring Security
+## 🛠️ Technologies Used
 
-JPA & Hibernate
+- Spring Boot  
+- Spring Security  
+- JPA & Hibernate  
+- H2 Database (in-memory for development and testing)  
+- Maven  
 
-H2 Database (In-memory database for development and testing)
+---
 
-Maven
+## 📦 Installation & Setup
 
-📦 Installation & Setup
+1. **Clone the repository:**
 
-Clone the repository:
+   ```
+   git clone https://github.com/yourusername/Academix.git
+   cd Academix
+   ```
 
-git clone https://github.com/yourusername/Academix.git
-cd Academix
+2. **Configure the database:**  
+   The project uses an in-memory H2 database by default.  
+   To switch databases, update `application.properties` accordingly.
 
-Configure the database:
+3. **Build and run the application:**
 
-The project is pre-configured to use an in-memory H2 Database.
+   ```
+   mvn spring-boot:run
+   ```
 
-If needed, update application.properties to switch to another database.
+4. **Access the API:**  
+   Base URL: `http://localhost:8081`  
+   Example endpoints:  
+   - `GET /students`  
+   - `POST /professors`
 
-Build and run the application:
+5. **Access H2 Console:**  
+   URL: `http://localhost:8080/h2-console`  
+   JDBC URL: `jdbc:h2:mem:testdb`  
+   Username: `sa`  
+   Password: *(leave empty)*
 
-mvn spring-boot:run
+---
 
-Access the API:
+## 🤝 Contributing
 
-Base URL: http://localhost:8081
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
-Sample Endpoints:
+---
 
-GET /students
+## License
 
-POST /professors
-
-Access H2 Console:
-
-URL: http://localhost:8080/h2-console
-
-JDBC URL: jdbc:h2:mem:testdb
-
-Username: sa
-
-Password: (leave empty by default)
-
-Contributors
-
-If you'd like to contribute, feel free to fork the repository and submit a pull request.
+This project is licensed under the MIT License.
