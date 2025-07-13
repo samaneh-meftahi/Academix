@@ -38,7 +38,7 @@
 1. **Clone the repository:**
 
    ```
-   git clone https://github.com/yourusername/Academix.git
+   git clone https://github.com/samaneh-meftahi/Academix.git
    cd Academix
    ```
 
